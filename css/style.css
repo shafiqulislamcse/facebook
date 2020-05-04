@@ -1,0 +1,282 @@
+/*start global css*/
+@font-face{
+	font-family: roboto;
+	src:url('../fonts/Roboto-Regular.ttf');
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: roboto;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+/*End global css*/
+
+
+/*start header css*/
+header{
+	background-color: #3A5898;
+	padding-top: 15px;
+	padding-bottom: 8px;
+}
+header .row{
+	justify-content: space-between;
+	align-items: center;
+}
+header .brand-name{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+header .brand-name a{
+	font-size: 35px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 800;
+}
+header .login-area{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+header .login-area .login-form{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	margin-right: 10px;
+}
+header .login-form .item{
+	flex: 0 0 30%;
+	max-width:30%;
+	margin-left: 15px;
+}
+
+header .login-form .item label{
+	font-size: 12px;
+	color: #fff;
+	margin-bottom: 5px;
+	display: block;
+	font-weight: 400;
+}
+header .login-form .item .form-control{
+	font-size: 13px;
+	padding: 3px;
+	display: block;
+	border: none;
+	font-weight: 500;
+	background-color: #E8F0FE;
+	border: 1px solid #1D2A5B;
+}
+header .login-form .item .form-control:focus{
+	outline: none;
+}
+header .login-form .item .forget a{
+	color: #8F93AF;
+	font-size: 12px;
+	font-weight: 400;
+	display: block;
+	padding-top: 10px;
+	text-decoration: none;
+}
+header .login-form .item .forget a:hover{
+	text-decoration: underline;
+}
+header .login-form .submit{
+	margin-top: 18px;
+	margin-left: 15px;
+}
+header .login-form .submit input{
+	color: #fff;
+	font-weight: 500;
+	font-size: 13px;
+	background-color: #4468AC;
+	border: 1px solid #29487D;
+	padding: 4px 5px;
+	display: block;
+	border-radius: 3px;
+	cursor: pointer;
+}
+header .login-form .submit input:hover{
+	background-color: #3A5898;
+}
+/*End header css*/
+
+/*Start body css*/
+.content-area{
+	background: linear-gradient(white, #D3D8E8);
+	padding: 30px 0px;
+}
+
+.content-area .row{
+	justify-content: space-between;
+}
+.content-area .img{
+	flex: 0 0 calc(60% - 10px);
+	max-width: calc(60% - 10px);
+}
+.content-area .img h3{
+	color: #0E385F;
+	font-size: 20px;
+	font-weight: 600;
+	padding-right: 150px;
+	line-height: 35px;
+	padding-top: 20px;
+}
+.content-area .signup-area{
+	flex: 0 0 calc(40% - 10px);
+	max-width: calc(40% - 10px);
+}
+.content-area .signup-area h1{
+	display: block;
+	color: #333333;
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.content-area .signup-area p{
+	color: #1D2129;
+	font-size: 19px;
+	font-weight: 400;
+}
+
+.content-area .signup-area .signup-content .fname{
+	flex: 0 0 calc(50% - 5px);
+	max-width: calc(50% - 5px);
+}
+.content-area .signup-area .signup-content .sname{
+	flex: 0 0 calc(50% - 5px);
+	max-width: calc(50% - 5px);
+}
+
+.content-area .signup-area .signup-content .form-control{
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #BDC7D8;
+}
+.content-area .signup-area .signup-content .form-control:focus{
+	outline: none;
+}
+.content-area .signup-area .signup-content .birthday{
+	margin-top: 15px;
+}
+.content-area .signup-area .signup-content .birthday label{
+	color: #90949F;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	display: block;
+}
+.content-area .signup-area .signup-content .birthday select{
+	font-size: 14px;
+	padding: 4px;
+	margin: -2px;
+	border: 1px solid #BDC7D8;
+}
+.content-area .signup-area .signup-content .birthday select:focus{
+	outline: none;
+}
+.content-area .signup-area .signup-content .birthday span{
+	margin-left: 8px;
+	background-color: #606770;
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 14px;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 50%;
+}
+
+.content-area .signup-area .signup-content .gender label{
+	color: #90949F;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	display: block;
+	margin-top: 20px;
+}
+.content-area .signup-area .signup-content .gender input{
+	margin-left: 15px;
+}
+.content-area .signup-area .signup-content .gender p{
+	display: inline-block;
+	margin-left: 5px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.content-area .signup-area .signup-content .gender span{
+	margin-left: 8px;
+	background-color: #606770;
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 14px;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 50%;
+}
+.content-area .signup-area .signup-content .privacy{
+	margin: 15px 0px;
+}
+.content-area .signup-area .signup-content .privacy p{
+	font-size: 11px;
+	padding: 0px 95px 0px 0px;
+	color: #777777;
+	line-height: 14px;
+}
+.content-area .signup-area .signup-content .privacy p a{
+	text-decoration: none;
+}
+.content-area .signup-area .signup-content .privacy p a:hover{
+	text-decoration: underline;
+}
+.content-area .signup-area .signup-content .btn{
+	margin: 30px 0px 20px 0px;
+}
+.content-area .signup-area .signup-content .btn input{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	display: inline-block;
+	padding:10px 80px;
+	border-radius: 7px;
+	border: none;
+	cursor: pointer;
+	background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+}
+.content-area .signup-area .signup-content .btn input:hover{
+	background: linear-gradient(#67ae55, #578843);
+}
+.content-area .signup-area .page{
+	margin-top: 30px;
+}
+.content-area .signup-area .page p{
+	font-size: 13px;
+	color: #666666;
+}
+.content-area .signup-area .page p a{
+	text-decoration: none;
+}
+.content-area .signup-area .page p a:hover{
+	text-decoration: underline;
+}
+/*End body css*/
